@@ -1,3 +1,5 @@
+package programmers.lv0.피자_나눠_먹기_1;
+
 class Solution {
     public int solution(int n) {
         int answer = 0;

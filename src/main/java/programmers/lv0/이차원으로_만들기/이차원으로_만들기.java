@@ -1,3 +1,5 @@
+package programmers.lv0.이차원으로_만들기;
+
 class Solution {
     public int[][] solution(int[] num_list, int n) {
         int[][] answer = {};
