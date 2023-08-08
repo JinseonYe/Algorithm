@@ -1,20 +1,18 @@
 package programmers.lv1.하샤드_수;
 
-import java.io.IOException;
+import java.util.stream.Stream;
 
 public class 하샤드_수 {
-	public boolean solution (int x) throws IOException {
+	public boolean solution(int x) {
+		boolean answer = true;
+		int[] xList = Stream.of(String.valueOf(x).split("")).mapToInt(Integer::parseInt).toArray();
 		int sum = 0;
-		int a = x;
-
-		while (a >= 1) {
-			sum += a % 10;
-			a /= 10;
+		for (int i=0; i<xList.length; i++) {
+			sum += xList[i];
 		}
-
-		if (x % sum == 0) {
-			return true;
-		} else
-			return false;
+		if (x % sum !=0) {
+			answer = false;
+		}
+		return answer;
 	}
 }
