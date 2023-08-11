@@ -1,4 +1,4 @@
-package baekjoon.bronze.no10950_AB3;
+package baekjoon.bronze.no_10950_AB3;
 
 import java.util.Scanner;
 
