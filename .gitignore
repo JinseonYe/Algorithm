@@ -2,4 +2,4 @@
 /.gradle/
 
 # IntelliJ IDEA
-out/
+/out/
